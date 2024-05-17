@@ -7,6 +7,7 @@ using Serilog;
 using System.Text;
 using System.Text.Json.Serialization;
 using Udemy.Api.AuthServicess;
+
 using Udemy.Application;
 using Udemy.Domain.MODELS;
 using Udemy.Infastucture.Persistants;
@@ -23,7 +24,7 @@ namespace Udemy.Api
             builder.Services.AddApplications();
             builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddScoped<IAuthService, AuthService>();
-
+            
 
 
 

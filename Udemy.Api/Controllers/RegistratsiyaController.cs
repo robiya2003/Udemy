@@ -1,10 +1,12 @@
-﻿using AutoService.Domain.Entities.Models;
+﻿
+using AutoService.Domain.Entities.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Win32;
 using Udemy.Api.AuthServicess;
+
 using Udemy.Domain.DTOS;
 using Udemy.Domain.MODELS;
 
@@ -17,12 +19,16 @@ namespace Udemy.Api.Controllers
         private readonly UserManager<UserModel> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IAuthService _authService;
-        public RegistratsiyaController(UserManager<UserModel> userManager,
-            RoleManager<IdentityRole> roleManager,IAuthService authService)
+        
+        public RegistratsiyaController(
+            UserManager<UserModel> userManager,
+            RoleManager<IdentityRole> roleManager,
+            IAuthService authService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _authService = authService;
+            
         }
         [HttpPost]
         public async Task<ResponceModel> CreatePersonForUser(UserDto userDto)
@@ -44,6 +50,10 @@ namespace Udemy.Api.Controllers
                 throw new Exception();
 
             await _userManager.AddToRoleAsync(user, "User");
+
+            // Send Email
+          
+
             return new ResponceModel()
             {
                 Message="User Created"
