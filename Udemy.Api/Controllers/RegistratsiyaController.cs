@@ -25,7 +25,7 @@ namespace Udemy.Api.Controllers
             _authService = authService;
         }
         [HttpPost]
-        public async Task<ResponceModel> CreateUser(UserDto userDto)
+        public async Task<ResponceModel> CreatePersonForUser(UserDto userDto)
         {
             if (!ModelState.IsValid)
             {
@@ -47,6 +47,36 @@ namespace Udemy.Api.Controllers
             return new ResponceModel()
             {
                 Message="User Created"
+            };
+        }
+
+
+
+        [HttpPost]
+        public async Task<ResponceModel> CreatePersonForAdmin(UserDto userDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                throw new Exception();
+            }
+            var user = new UserModel()
+            {
+                UserName = userDto.Username,
+                Email = userDto.Email,
+                FirstName = userDto.Firstname,
+                LastName = userDto.Lastname,
+                Role = "Admin"
+            };
+
+            var result = await _userManager.CreateAsync(user, userDto.Password);
+
+            if (!result.Succeeded)
+                throw new Exception();
+
+            await _userManager.AddToRoleAsync(user, "Admin");
+            return new ResponceModel()
+            {
+                Message = "Admin Created"
             };
         }
         [HttpPost]
