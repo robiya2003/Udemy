@@ -1,5 +1,6 @@
 ﻿
 using AutoService.Domain.Entities.Models;
+using EmailSenderApp.Application.Services.EmailServces;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -19,15 +20,17 @@ namespace Udemy.Api.Controllers
         private readonly UserManager<UserModel> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IAuthService _authService;
-        
+        private readonly IEmailService _emailService;
         public RegistratsiyaController(
             UserManager<UserModel> userManager,
             RoleManager<IdentityRole> roleManager,
-            IAuthService authService)
+            IAuthService authService,
+            IEmailService emailService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _authService = authService;
+            _emailService = emailService;
             
         }
         [HttpPost]
@@ -52,7 +55,13 @@ namespace Udemy.Api.Controllers
             await _userManager.AddToRoleAsync(user, "User");
 
             // Send Email
-          
+          EmailModel emailModel = new EmailModel()
+          {
+              To = userDto.Email,
+              Subject="Registratsiya",
+              Body="Registratsiyadan muvaqqiyatli otdizngiz"
+          };
+            await _emailService.SendEmailAsync(emailModel);
 
             return new ResponceModel()
             {
