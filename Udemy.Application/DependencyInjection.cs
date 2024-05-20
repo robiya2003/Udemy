@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using EmailSenderApp.Application.Services.EmailServces;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Udemy.Application
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(typeof(AutoMapperProfile));
+            services.AddScoped<IEmailService, EmailService>();
             return services;
         }
     }
