@@ -40,7 +40,6 @@
     <Folder Include="wwwroot\images\lessons\" />
     <Folder Include="wwwroot\images\news\" />
     <Folder Include="wwwroot\images\populartopics\" />
-    <Folder Include="wwwroot\images\topics\" />
   </ItemGroup>
 
 </Project>

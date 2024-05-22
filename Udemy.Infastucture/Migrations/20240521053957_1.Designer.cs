@@ -12,8 +12,8 @@ using Udemy.Infastucture.Persistants;
 namespace Udemy.Infastucture.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240517055653_first")]
-    partial class first
+    [Migration("20240521053957_1")]
+    partial class _1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -43,6 +43,32 @@ namespace Udemy.Api.Controllers
             
             return await _mediator.Send(new GetAllCategoryCommandQuery ());
         }
+        // Get By Id
+        [HttpGet]
+        public async Task<CategoryModel> GetByIdCategory(int id)
+        {
+            return await _mediator.Send(new GetByIdCategoryCommandQuery() {  Id = id });
+        }
+        // Get By Name
+
+        [HttpGet]
+        public async Task<CategoryModel> GetByNameCategory(string name)
+        {
+            return await _mediator.Send(new GetByNameCategoryCommandQuery() { Name=name});
+        }
+        // list string
+        [HttpGet]
+        public async Task<List<string>> GetAllCategoryStringList()
+        {
+            return await _mediator.Send(new GetAllCategoryStringCommandQuery() { });
+        }
+        // Topics
+        [HttpGet]
+        public async Task<List<string>> GetByCategoryTopic(string name)
+        {
+            return await _mediator.Send(new GetByCategoryTopicCommandQuery() { CategoryName = name });
+        }
+
         [HttpPut]
         public async Task<ResponceModel> UpdateCategory(CategoryUDTO category)
         {
