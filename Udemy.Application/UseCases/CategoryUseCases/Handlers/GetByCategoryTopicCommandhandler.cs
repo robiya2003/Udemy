@@ -7,25 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Udemy.Application.UseCases.CategoryUseCases.Queries;
+using Udemy.Domain.MODELS;
 
 namespace Udemy.Application.UseCases.CategoryUseCases.Handlers
 {
-    public class GetByCategoryTopicCommandhandler : IRequestHandler<GetByCategoryTopicCommandQuery, List<string>>
+    public class GetByCategoryTopicCommandhandler : IRequestHandler<GetByCategoryTopicCommandQuery, List<TopicModel>>
     {
         private readonly IAppDbContext _appDbContext;
         public GetByCategoryTopicCommandhandler(IAppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
-        public async Task<List<string>> Handle(GetByCategoryTopicCommandQuery request, CancellationToken cancellationToken)
+
+        public async Task<List<TopicModel>> Handle(GetByCategoryTopicCommandQuery request, CancellationToken cancellationToken)
         {
-            var topics=await _appDbContext.topic.ToListAsync();
-            List<string> result = new List<string>();
-            foreach (var topic in topics)
+            var categories = await _appDbContext.categories.ToListAsync();
+            List<TopicModel> result=new List<TopicModel>();
+            foreach (var category in categories)
             {
-                if(topic.Category.Name==request.CategoryName)
+                if(category.Name == request.CategoryName)
                 {
-                    result.Add(topic.Name);
+                    result=category.Topics.ToList();
                 }
             }
             return result;

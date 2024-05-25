@@ -35,9 +35,15 @@ namespace Udemy.Api.Controllers
                 name=model.name,
                 description=model.description,
                 AutherId=model.AutherId,
-                PhotoPath=filePath,
+                PhotoPath= $"https://localhost:7030/images/courses/{model.imagefile.FileName}",
             };
             return await _mediator.Send(command);
+        }
+        // course namega kora CourseModelnni olish
+        [HttpGet]
+        public async Task<CourseModel> GetCourseLessons(string name)
+        {
+            return await _mediator.Send(new GetByCourseNameForLessonsCommandQuery(){CourseName=name });
         }
         [HttpGet]
         public async Task<List<CourseModel>> GetAllCouses()

@@ -33,7 +33,7 @@ namespace Udemy.Api.Controllers
             {
                 Name = categoryDTO.Name,
                 Description = categoryDTO.Description,
-                CategoryPhotoPath=filePath
+                CategoryPhotoPath= $"https://localhost:7030/images/categories/{categoryDTO.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
@@ -64,9 +64,9 @@ namespace Udemy.Api.Controllers
         }
         // Topics
         [HttpGet]
-        public async Task<List<string>> GetByCategoryTopic(string name)
+        public async Task<List<TopicModel>> GetByCategoryTopic(string name)
         {
-            return await _mediator.Send(new GetByCategoryTopicCommandQuery() { CategoryName = name });
+            return await _mediator.Send(new GetByCategoryTopicCommandQuery() { CategoryName = name }) ;
         }
 
         [HttpPut]

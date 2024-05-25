@@ -56,7 +56,12 @@ namespace Udemy.Api.Controllers
             return await _mediator.Send(new GetByIdTopicCommandQuery() { Id = id });
         }
 
-
+        // get By TopicName PopularTopics
+        [HttpGet]
+        public async Task<List<PopularTopicModel>> GetByTopicNamePopularTopics(string topicName)
+        {
+            return await _mediator.Send(new GetByTopicNamePopularTopicListCommandQuery() { TopicName=topicName});
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdateTopic(TopicUDTO topicUDTO)
         {

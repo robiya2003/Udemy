@@ -104,176 +104,77 @@ namespace Udemy.Api.AllData
             {
                 List<TopicModel> list = new List<TopicModel>()
                 {
-                    #region Development Category
+                    // Development Category
                     new TopicModel()
                     {
                         Name="Web Development",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        Description="Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.",
+                        TopicPhotoPath="https://localhost:7030/images/topics/webdevelopment.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
                     new TopicModel()
                     {
                         Name="Data Science",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        Description="Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI) and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data. These insights can be used to guide decision making and strategic planning.",
+                        TopicPhotoPath="https://localhost:7030/images/topics/datascience.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
                     new TopicModel()
                     {
-                        Name="Mobile Development",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        Name="Mobeile Development",
+                        Description="Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.",
+                        TopicPhotoPath="https://localhost:7030/images/topics/mobiledevelopment.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Programming Languages",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Game Development",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Database Design and Development",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Software Testing",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Software Engineering",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="Software Development Tools",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    new TopicModel()
+                   new TopicModel()
                     {
                         Name="No-Code Development",
                         Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
+                        TopicPhotoPath="https://localhost:7030/images/courses/topic.jpg",
                         Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==1)
                     },
-                    #endregion
-                    
-                    #region Business Category
-                    new TopicModel()
-                    {
-                        Name="Entrepreneurship",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="",
-                        Description="Communication",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Management",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Sales",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Business strategy",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Operations",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    
-                    new TopicModel()
-                    {
-                        Name="Project Management",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Business Law",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Business Analytics and Intelligence",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    },
-                    new TopicModel()
-                    {
-                        Name="Human Resources",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    }
-                    ,
-                    new TopicModel()
-                    {
-                        Name="Industry",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    }
-                    ,
-                    new TopicModel()
-                    {
-                        Name="E-Commerce",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    }
-                    ,
-                    new TopicModel()
-                    {
-                        Name="Media",
-                        Description="Description",
-                        TopicPhotoPath="C:\\Users\\LENOVO\\OneDrive\\Desktop\\DockerNew\\Udemy.Api\\Udemy.Api\\wwwroot\\images\\topics\\topic.jpg",
-                        Category=await db.categories.FirstOrDefaultAsync(x=>x.Id==2)
-                    }
-#endregion
 
 
                 };
