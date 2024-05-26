@@ -6,6 +6,7 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
 using System.Text.Json.Serialization;
+using Udemy.Api.AllData;
 using Udemy.Api.AuthServicess;
 
 using Udemy.Application;
@@ -105,6 +106,9 @@ namespace Udemy.Api
                 .AddApiEndpoints();
             */
             var app = builder.Build();
+            AsyncServiceScope scope1 = app.Services.CreateAsyncScope();
+            scope1.ServiceProvider.InitiliazeDataAsync();
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

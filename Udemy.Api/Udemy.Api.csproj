@@ -36,8 +36,8 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\categories\" />
     <Folder Include="wwwroot\images\authers\" />
-    <Folder Include="wwwroot\images\courses\" />
     <Folder Include="wwwroot\images\lessons\" />
+    <Folder Include="wwwroot\LessonVideoPath\" />
     <Folder Include="wwwroot\images\news\" />
     <Folder Include="wwwroot\images\populartopics\" />
   </ItemGroup>
