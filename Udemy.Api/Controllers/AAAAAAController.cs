@@ -1,15 +1,29 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoService.Application.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Udemy.Domain.MODELS;
 
 namespace Udemy.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize]
+    
     public class AAAAAAController : ControllerBase
     {
-        [Authorize(Roles = "Admin")]
+        private readonly IAppDbContext _appDbContext;
+
+        public AAAAAAController(IAppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
+        [HttpGet]
+        public async Task<List<UserModel>> GetCourse(int id)
+        {
+            return _appDbContext.courses.FirstOrDefaultAsync(x=>x.id == id).Result.users;
+        }
+        
         [HttpPost]
         public async Task<string> UploadFileAdmin(IFormFile ufile)
         {
@@ -26,7 +40,7 @@ namespace Udemy.Api.Controllers
             }
             return "yaratilmadi";
         }
-        [Authorize(Roles = "User")]
+        
         [HttpPost]
         public async Task<string> UploadFileUser(IFormFile ufile)
         {

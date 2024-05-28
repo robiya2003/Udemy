@@ -65,7 +65,7 @@ namespace Udemy.Api.Controllers
 
             return new ResponceModel()
             {
-                Message="User Created"
+                Message = $"{_userManager.FindByEmailAsync(userDto.Email).Result.Id}"
             };
         }
 

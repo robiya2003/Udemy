@@ -42,6 +42,11 @@ namespace Udemy.Api.Controllers
         {
             return await _mediator.Send(new GetAllLessonCommandQuery ());
         }
+        [HttpGet] 
+        public async Task<LessonModel> GetByIdLesson(int Id)
+        {
+            return await _mediator.Send(new GetByIdLessonCommandQuery { Id = Id });
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdateLesson(LessonUDTO lesson)
         {

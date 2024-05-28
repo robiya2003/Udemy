@@ -426,7 +426,7 @@ namespace Udemy.Api.AllData
                 
                 List<LessonModel> list = new List<LessonModel>()
                 {
-                    // course 1
+                    // course 1 image
                     #region
                     new LessonModel()
                     {
@@ -440,7 +440,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asosiy Dasturlash Konsepsiyalari",
                          description="O‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: Matematik, mantiqiy va taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch bayonotlari.\r\nTsykllar: for, while, do while tsikllari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -448,7 +448,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Funksiyalar",
                          description="Funksiya E’lon qilish: Oddiy funksiyalar, anonim funksiyalar, o‘zgaruvchan funksiyalar.\r\nFunksional Programmalar: Callbacklar, arrow funksiyalar (=>).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -456,7 +456,7 @@ namespace Udemy.Api.AllData
                     {
                          name="DOM (Document Object Model) bilan Ishlash",
                          description="DOM Nima?: HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni Tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni Boshqarish: Eventlar, hodisalar bilan ishlash (addEventListener).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -464,7 +464,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asinxron JavaScript",
                          description="Timerlar: setTimeout, setInterval.\r\nCallbacks: Asinxron jarayonlarni boshqarish.\r\nPromises: Asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: Asinxron kodni soddalashtirish.\r\n",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -472,7 +472,7 @@ namespace Udemy.Api.AllData
                     {
                          name="JavaScript Kutubxona va Ramkalari",
                          description="jQuery: JavaScriptni yengillashtiruvchi kutubxona.\r\nReact.js: Foydalanuvchi interfeysi yaratish uchun kutubxona.\r\nVue.js va Angular: Kompleks ilovalar uchun boshqa mashhur ramkalar.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -480,7 +480,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Server Tomoni JavaScript",
                          description="Node.js: Server tomonida JavaScriptni ishlatish.\r\nExpress.js: Node.js uchun ramka.\r\nAPIs va RESTful Servislar: Backend bilan o‘zaro aloqa.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
@@ -488,19 +488,19 @@ namespace Udemy.Api.AllData
                     {
                          name="Amaliy Loyihalar",
                          description="Kichik Loyihalar: Oddiy veb-sahifalar va o‘yinlar.\r\nKatta Loyihalar: Kompleks veb-ilovalar va foydalanuvchi interfeyslari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==1)
                     },
                     #endregion
 
-                    // course 7
+                    // course 7 image
                     #region
                     new LessonModel()
                     {
                          name="Kirish va Asoslar",
                          description="JavaScript nima?: Tarixi va qo‘llanilishi.\r\nMuhitni sozlash: Brauzerlar, kod muharrirlari (VS Code, Sublime Text).\r\nHello, World!: Birinchi JavaScript dasturini yozish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -508,7 +508,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asosiy Dasturlash Konsepsiyalari",
                          description="O‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: Matematik, mantiqiy va taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch bayonotlari.\r\nTsykllar: for, while, do while tsikllari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -524,7 +524,7 @@ namespace Udemy.Api.AllData
                     {
                          name="DOM (Document Object Model) bilan Ishlash",
                          description="DOM Nima?: HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni Tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni Boshqarish: Eventlar, hodisalar bilan ishlash (addEventListener).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -532,7 +532,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asinxron JavaScript",
                          description="Timerlar: setTimeout, setInterval.\r\nCallbacks: Asinxron jarayonlarni boshqarish.\r\nPromises: Asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: Asinxron kodni soddalashtirish.\r\n",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -540,7 +540,7 @@ namespace Udemy.Api.AllData
                     {
                          name="JavaScript Kutubxona va Ramkalari",
                          description="jQuery: JavaScriptni yengillashtiruvchi kutubxona.\r\nReact.js: Foydalanuvchi interfeysi yaratish uchun kutubxona.\r\nVue.js va Angular: Kompleks ilovalar uchun boshqa mashhur ramkalar.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -548,7 +548,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Server Tomoni JavaScript",
                          description="Node.js: Server tomonida JavaScriptni ishlatish.\r\nExpress.js: Node.js uchun ramka.\r\nAPIs va RESTful Servislar: Backend bilan o‘zaro aloqa.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
@@ -556,19 +556,19 @@ namespace Udemy.Api.AllData
                     {
                          name="Amaliy Loyihalar",
                          description="Kichik Loyihalar: Oddiy veb-sahifalar va o‘yinlar.\r\nKatta Loyihalar: Kompleks veb-ilovalar va foydalanuvchi interfeyslari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==7)
                     },
                     #endregion
 
-                    // course 9
+                    // course 9 image
                     #region
                     new LessonModel()
                     {
                          name="Kirish va Asoslar",
                          description="JavaScript nima?: Tarixi va qo‘llanilishi.\r\nMuhitni sozlash: Brauzerlar, kod muharrirlari (VS Code, Sublime Text).\r\nHello, World!: Birinchi JavaScript dasturini yozish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -576,7 +576,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asosiy Dasturlash Konsepsiyalari",
                          description="O‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: Matematik, mantiqiy va taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch bayonotlari.\r\nTsykllar: for, while, do while tsikllari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -584,7 +584,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Funksiyalar",
                          description="Funksiya E’lon qilish: Oddiy funksiyalar, anonim funksiyalar, o‘zgaruvchan funksiyalar.\r\nFunksional Programmalar: Callbacklar, arrow funksiyalar (=>).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -592,7 +592,7 @@ namespace Udemy.Api.AllData
                     {
                          name="DOM (Document Object Model) bilan Ishlash",
                          description="DOM Nima?: HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni Tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni Boshqarish: Eventlar, hodisalar bilan ishlash (addEventListener).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -608,7 +608,7 @@ namespace Udemy.Api.AllData
                     {
                          name="JavaScript Kutubxona va Ramkalari",
                          description="jQuery: JavaScriptni yengillashtiruvchi kutubxona.\r\nReact.js: Foydalanuvchi interfeysi yaratish uchun kutubxona.\r\nVue.js va Angular: Kompleks ilovalar uchun boshqa mashhur ramkalar.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -616,7 +616,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Server Tomoni JavaScript",
                          description="Node.js: Server tomonida JavaScriptni ishlatish.\r\nExpress.js: Node.js uchun ramka.\r\nAPIs va RESTful Servislar: Backend bilan o‘zaro aloqa.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
@@ -624,19 +624,19 @@ namespace Udemy.Api.AllData
                     {
                          name="Amaliy Loyihalar",
                          description="Kichik Loyihalar: Oddiy veb-sahifalar va o‘yinlar.\r\nKatta Loyihalar: Kompleks veb-ilovalar va foydalanuvchi interfeyslari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==9)
                     },
                     #endregion
 
-                    // course3
+                    // course3 image
                     #region
                     new LessonModel()
                     {
                          name="1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==3)
                     },
@@ -644,7 +644,7 @@ namespace Udemy.Api.AllData
                     {
                          name="2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.",
                          description="\r\nHTML, CSS va JavaScript kurslari veb-dasturlashning asosiy texnologiyalarini o‘rganish uchun muhimdir. Bu kurslar veb-sahifalar yaratish va ularni dinamik va interaktiv qilish imkonini beradi. Quyida HTML, CSS va JavaScript kurslarining umumiy mazmuni haqida ma'lumot keltirilgan.\r\n\r\nKursning Tuzilishi\r\n1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.\r\n2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nCSS nima va nima uchun kerak?\r\nCSS fayllarni HTML bilan bog‘lash: <style> teglar va <link> elementi.\r\nSintaksis va Selektorlar:\r\n\r\nCSS sintaksisi: selektor, property, value.\r\nAsosiy selektorlar: element, class, id, attribute selektorlar.\r\nRanglar va Fonlar:\r\n\r\nRanglar: rang nomlari, HEX, RGB, RGBA, HSL.\r\nFonlar: background-color, background-image, background-repeat, background-position, background-size.\r\nMatnni Stilizatsiya qilish:\r\n\r\nMatn stilizatsiyasi: color, font-family, font-size, font-weight, line-height, text-align.\r\nLayout va Positioning:\r\n\r\nBox model: margin, border, padding, content.\r\nPositioning: static, relative, absolute, fixed, sticky.\r\nDisplay: block, inline, inline-block, none.\r\nFlexbox va Grid layoutlari.\r\nResponsive Design:\r\n\r\nMedia queries.\r\nResponsive dizayn prinsiplari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==3)
                     },
@@ -652,20 +652,20 @@ namespace Udemy.Api.AllData
                     {
                          name="3. JavaScript\r\nJavaScript veb-sahifalarga interaktivlik qo‘shish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nJavaScript nima va nima uchun kerak?\r\nJavaScriptni HTML bilan bog‘lash: <script> tegi.\r\nSintaksis va Asosiy Konsepsiyalar:\r\n\r\nO‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: matematik, mantiqiy, taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch.\r\nTsykllar: for, while, do while.\r\nFunksiyalar:\r\n\r\nFunksiya e’lon qilish: oddiy funksiyalar, anonim funksiyalar, arrow funksiyalar.\r\nFunksional programmalar: callbacklar, higher-order functions.\r\nDOM (Document Object Model) bilan Ishlash:\r\n\r\nDOM nima? HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni boshqarish: eventlar, hodisalar bilan ishlash (addEventListener).\r\nAsinxron JavaScript:\r\n\r\nTimerlar: setTimeout, setInterval.\r\nCallbacks: asinxron jarayonlarni boshqarish.\r\nPromises: asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: asinxron kodni soddalashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==4)
                     },
                     #endregion
 
 
-                    // course 4
+                    // course 4 image
                     #region
                     new LessonModel()
                     {
                          name="1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==4)
                     },
@@ -673,7 +673,7 @@ namespace Udemy.Api.AllData
                     {
                          name="2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.",
                          description="\r\nHTML, CSS va JavaScript kurslari veb-dasturlashning asosiy texnologiyalarini o‘rganish uchun muhimdir. Bu kurslar veb-sahifalar yaratish va ularni dinamik va interaktiv qilish imkonini beradi. Quyida HTML, CSS va JavaScript kurslarining umumiy mazmuni haqida ma'lumot keltirilgan.\r\n\r\nKursning Tuzilishi\r\n1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.\r\n2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nCSS nima va nima uchun kerak?\r\nCSS fayllarni HTML bilan bog‘lash: <style> teglar va <link> elementi.\r\nSintaksis va Selektorlar:\r\n\r\nCSS sintaksisi: selektor, property, value.\r\nAsosiy selektorlar: element, class, id, attribute selektorlar.\r\nRanglar va Fonlar:\r\n\r\nRanglar: rang nomlari, HEX, RGB, RGBA, HSL.\r\nFonlar: background-color, background-image, background-repeat, background-position, background-size.\r\nMatnni Stilizatsiya qilish:\r\n\r\nMatn stilizatsiyasi: color, font-family, font-size, font-weight, line-height, text-align.\r\nLayout va Positioning:\r\n\r\nBox model: margin, border, padding, content.\r\nPositioning: static, relative, absolute, fixed, sticky.\r\nDisplay: block, inline, inline-block, none.\r\nFlexbox va Grid layoutlari.\r\nResponsive Design:\r\n\r\nMedia queries.\r\nResponsive dizayn prinsiplari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==4)
                     },
@@ -681,13 +681,13 @@ namespace Udemy.Api.AllData
                     {
                          name="3. JavaScript\r\nJavaScript veb-sahifalarga interaktivlik qo‘shish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nJavaScript nima va nima uchun kerak?\r\nJavaScriptni HTML bilan bog‘lash: <script> tegi.\r\nSintaksis va Asosiy Konsepsiyalar:\r\n\r\nO‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: matematik, mantiqiy, taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch.\r\nTsykllar: for, while, do while.\r\nFunksiyalar:\r\n\r\nFunksiya e’lon qilish: oddiy funksiyalar, anonim funksiyalar, arrow funksiyalar.\r\nFunksional programmalar: callbacklar, higher-order functions.\r\nDOM (Document Object Model) bilan Ishlash:\r\n\r\nDOM nima? HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni boshqarish: eventlar, hodisalar bilan ishlash (addEventListener).\r\nAsinxron JavaScript:\r\n\r\nTimerlar: setTimeout, setInterval.\r\nCallbacks: asinxron jarayonlarni boshqarish.\r\nPromises: asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: asinxron kodni soddalashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==4)
                     },
                     #endregion
 
-                    // course 8
+                    // course 8 image
                     #region
                     new LessonModel()
                     {
@@ -701,7 +701,7 @@ namespace Udemy.Api.AllData
                     {
                          name="2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.",
                          description="\r\nHTML, CSS va JavaScript kurslari veb-dasturlashning asosiy texnologiyalarini o‘rganish uchun muhimdir. Bu kurslar veb-sahifalar yaratish va ularni dinamik va interaktiv qilish imkonini beradi. Quyida HTML, CSS va JavaScript kurslarining umumiy mazmuni haqida ma'lumot keltirilgan.\r\n\r\nKursning Tuzilishi\r\n1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.\r\n2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nCSS nima va nima uchun kerak?\r\nCSS fayllarni HTML bilan bog‘lash: <style> teglar va <link> elementi.\r\nSintaksis va Selektorlar:\r\n\r\nCSS sintaksisi: selektor, property, value.\r\nAsosiy selektorlar: element, class, id, attribute selektorlar.\r\nRanglar va Fonlar:\r\n\r\nRanglar: rang nomlari, HEX, RGB, RGBA, HSL.\r\nFonlar: background-color, background-image, background-repeat, background-position, background-size.\r\nMatnni Stilizatsiya qilish:\r\n\r\nMatn stilizatsiyasi: color, font-family, font-size, font-weight, line-height, text-align.\r\nLayout va Positioning:\r\n\r\nBox model: margin, border, padding, content.\r\nPositioning: static, relative, absolute, fixed, sticky.\r\nDisplay: block, inline, inline-block, none.\r\nFlexbox va Grid layoutlari.\r\nResponsive Design:\r\n\r\nMedia queries.\r\nResponsive dizayn prinsiplari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==8)
                     },
@@ -709,19 +709,19 @@ namespace Udemy.Api.AllData
                     {
                          name="3. JavaScript\r\nJavaScript veb-sahifalarga interaktivlik qo‘shish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nJavaScript nima va nima uchun kerak?\r\nJavaScriptni HTML bilan bog‘lash: <script> tegi.\r\nSintaksis va Asosiy Konsepsiyalar:\r\n\r\nO‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: matematik, mantiqiy, taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch.\r\nTsykllar: for, while, do while.\r\nFunksiyalar:\r\n\r\nFunksiya e’lon qilish: oddiy funksiyalar, anonim funksiyalar, arrow funksiyalar.\r\nFunksional programmalar: callbacklar, higher-order functions.\r\nDOM (Document Object Model) bilan Ishlash:\r\n\r\nDOM nima? HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni boshqarish: eventlar, hodisalar bilan ishlash (addEventListener).\r\nAsinxron JavaScript:\r\n\r\nTimerlar: setTimeout, setInterval.\r\nCallbacks: asinxron jarayonlarni boshqarish.\r\nPromises: asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: asinxron kodni soddalashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==8)
                     },
                     #endregion
 
-                    // course 10
+                    // course 10 iamge
                     #region
                     new LessonModel()
                     {
                          name="1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==10)
                     },
@@ -729,7 +729,7 @@ namespace Udemy.Api.AllData
                     {
                          name="2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.",
                          description="\r\nHTML, CSS va JavaScript kurslari veb-dasturlashning asosiy texnologiyalarini o‘rganish uchun muhimdir. Bu kurslar veb-sahifalar yaratish va ularni dinamik va interaktiv qilish imkonini beradi. Quyida HTML, CSS va JavaScript kurslarining umumiy mazmuni haqida ma'lumot keltirilgan.\r\n\r\nKursning Tuzilishi\r\n1. HTML (HyperText Markup Language)\r\nHTML veb-sahifaning tuzilishini yaratish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nHTML nima va nima uchun kerak?\r\nHTML fayl tuzilishi (doctype, html, head, body teglar).\r\nElementlar va Teglar:\r\n\r\nAsosiy teglar: <!DOCTYPE html>, <html>, <head>, <body>, <title>, <h1>-<h6>, <p>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, va hokazo.\r\nFormalar va kiritish elementlari: <form>, <input>, <textarea>, <button>, <select>, <option>.\r\nMatnni Formatlash:\r\n\r\nMatn teglar: <strong>, <em>, <br>, <hr>, <blockquote>, <code>.\r\nMultimedia Elementlar:\r\n\r\nRasmlar: <img>.\r\nVideo va audio: <video>, <audio>.\r\nSemantik HTML:\r\n\r\nSemantik teglar: <header>, <nav>, <section>, <article>, <footer>.\r\n2. CSS (Cascading Style Sheets)\r\nCSS veb-sahifalarning ko‘rinishini va tuzilishini boshqarish uchun ishlatiladi.\r\n\r\nMavzular:\r\nKirish va Asoslar:\r\n\r\nCSS nima va nima uchun kerak?\r\nCSS fayllarni HTML bilan bog‘lash: <style> teglar va <link> elementi.\r\nSintaksis va Selektorlar:\r\n\r\nCSS sintaksisi: selektor, property, value.\r\nAsosiy selektorlar: element, class, id, attribute selektorlar.\r\nRanglar va Fonlar:\r\n\r\nRanglar: rang nomlari, HEX, RGB, RGBA, HSL.\r\nFonlar: background-color, background-image, background-repeat, background-position, background-size.\r\nMatnni Stilizatsiya qilish:\r\n\r\nMatn stilizatsiyasi: color, font-family, font-size, font-weight, line-height, text-align.\r\nLayout va Positioning:\r\n\r\nBox model: margin, border, padding, content.\r\nPositioning: static, relative, absolute, fixed, sticky.\r\nDisplay: block, inline, inline-block, none.\r\nFlexbox va Grid layoutlari.\r\nResponsive Design:\r\n\r\nMedia queries.\r\nResponsive dizayn prinsiplari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==10)
                     },
@@ -737,20 +737,20 @@ namespace Udemy.Api.AllData
                     {
                          name="3. JavaScript\r\nJavaScript veb-sahifalarga interaktivlik qo‘shish uchun ishlatiladi.",
                          description="Kirish va Asoslar:\r\n\r\nJavaScript nima va nima uchun kerak?\r\nJavaScriptni HTML bilan bog‘lash: <script> tegi.\r\nSintaksis va Asosiy Konsepsiyalar:\r\n\r\nO‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: matematik, mantiqiy, taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch.\r\nTsykllar: for, while, do while.\r\nFunksiyalar:\r\n\r\nFunksiya e’lon qilish: oddiy funksiyalar, anonim funksiyalar, arrow funksiyalar.\r\nFunksional programmalar: callbacklar, higher-order functions.\r\nDOM (Document Object Model) bilan Ishlash:\r\n\r\nDOM nima? HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni boshqarish: eventlar, hodisalar bilan ishlash (addEventListener).\r\nAsinxron JavaScript:\r\n\r\nTimerlar: setTimeout, setInterval.\r\nCallbacks: asinxron jarayonlarni boshqarish.\r\nPromises: asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: asinxron kodni soddalashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==10)
                     },
                     #endregion
 
 
-                    // course 2
+                    // course 2 image
                     #region
                     new LessonModel()
                     {
                          name="Kirish va Asoslar",
                          description="JavaScript nima?: Tarixi va qo‘llanilishi.\r\nMuhitni sozlash: Brauzerlar, kod muharrirlari (VS Code, Sublime Text).\r\nHello, World!: Birinchi JavaScript dasturini yozish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -758,7 +758,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asosiy Dasturlash Konsepsiyalari",
                          description="O‘zgaruvchilar va Ma'lumot Turlari: let, const, raqamlar, satrlar, massivlar, ob’ektlar.\r\nOperatorlar va Ifodalar: Matematik, mantiqiy va taqqoslash operatorlari.\r\nShartli Operatsiyalar: if, else if, else, switch bayonotlari.\r\nTsykllar: for, while, do while tsikllari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -766,7 +766,7 @@ namespace Udemy.Api.AllData
                      {
                           name="Funksiyalar",
                           description="Funksiya E’lon qilish: Oddiy funksiyalar, anonim funksiyalar, o‘zgaruvchan funksiyalar.\r\nFunksional Programmalar: Callbacklar, arrow funksiyalar (=>).",
-                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                           VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                           Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                      },
@@ -774,7 +774,7 @@ namespace Udemy.Api.AllData
                     {
                          name="DOM (Document Object Model) bilan Ishlash",
                          description="DOM Nima?: HTML tarkibini JavaScript orqali o‘zgartirish.\r\nElementlarni Tanlash: getElementById, querySelector, va boshqalar.\r\nHodisalarni Boshqarish: Eventlar, hodisalar bilan ishlash (addEventListener).\r\n",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -790,7 +790,7 @@ namespace Udemy.Api.AllData
                      {
                           name="JavaScript Kutubxona va Ramkalari",
                           description="jQuery: JavaScriptni yengillashtiruvchi kutubxona.\r\nReact.js: Foydalanuvchi interfeysi yaratish uchun kutubxona.\r\nVue.js va Angular: Kompleks ilovalar uchun boshqa mashhur ramkalar.",
-                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                           VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                           Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                      },
@@ -798,7 +798,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Server Tomoni JavaScript",
                          description="Node.js: Server tomonida JavaScriptni ishlatish.\r\nExpress.js: Node.js uchun ramka.\r\nAPIs va RESTful Servislar: Backend bilan o‘zaro aloqa.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -806,7 +806,7 @@ namespace Udemy.Api.AllData
                      {
                           name="Amaliy Loyihalar",
                           description="Kichik Loyihalar: Oddiy veb-sahifalar va o‘yinlar.\r\nKatta Loyihalar: Kompleks veb-ilovalar va foydalanuvchi interfeyslari.",
-                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                           VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                           Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                      },
@@ -814,7 +814,7 @@ namespace Udemy.Api.AllData
                     {
                          name="TypeScript Kirish va Asoslar",
                          description="TypeScript nima?: Tarixi, maqsadi, imkoniyatlari.\r\nMuhitni sozlash: TypeScript kompilyatori, kod muharrirlari.\r\nBirinci dastur: \"Hello, World!\" dasturi TypeScriptda.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -822,7 +822,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Asosiy Konsepsiyalar",
                          description="Tiplar: Asosiy va murakkab turlar (string, number, boolean, array, tuple, enum).\r\nInterfeyslar va Turlar: TypeScriptning asosiy interfeyslari va ulardan foydalanish.\r\nKlasslar va Ob'ektlar: Ob'ektga yo‘naltirilgan dasturlash (OOP), klasslar, meros olish, interfeyslar.\r\nFunksiyalar: Tiplangan funksiyalar, funksiya turlari, arrow funksiyalar.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -830,7 +830,7 @@ namespace Udemy.Api.AllData
                      {
                           name=" Advanced TypeScript",
                           description="Generics: Generik turlar bilan ishlash.\r\nDekoratorlar: Klass va usul dekoratorlari.\r\nModullar va Namespaces: TypeScriptda modullarni yaratish va ulardan foydalanish.",
-                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                           VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                           Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                      },
@@ -838,7 +838,7 @@ namespace Udemy.Api.AllData
                     {
                          name=". Asinxron Dasturlash",
                          description="Promises: Asinxron operatsiyalarni yengillashtirish.\r\nAsync/Await: Asinxron kodni soddalashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -846,7 +846,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" TypeScript va JavaScript Bilan Integratsiya",
                          description="JavaScript Kodini Migratsiya qilish: Mavjud JavaScript loyihasini TypeScriptga o‘tkazish.\r\nJavaScript Kutubxonalari bilan Ishlash: TypeScriptda JavaScript kutubxonalarini ishlatish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                     },
@@ -854,13 +854,13 @@ namespace Udemy.Api.AllData
                      {
                           name=". Amaliy Loyihalar",
                           description="Kichik Loyihalar: Oddiy TypeScript ilovalari.\r\nKatta Loyihalar: Kompleks TypeScript ilovalari va JavaScript bilan integratsiyalashgan loyihalar.",
-                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                          LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                           VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                           Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==2)
                      },
                     #endregion
 
-                    // course 5
+                    // course 5 image
                     #region
                     new LessonModel()
                     {
@@ -874,7 +874,7 @@ namespace Udemy.Api.AllData
                     {
                          name="JSX (JavaScript XML)",
                          description="JSX nima?: JSX bilan ishlash.\r\nJSX Sintaksisi: HTML va JavaScriptni birlashtirish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -882,7 +882,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Komponentlar",
                          description="Komponentlar yaratish: Funksional va klass komponentlari.\r\nProps va State: Komponentlar o‘rtasida ma'lumot uzatish.\r\nLifecycle metodlari: Klass komponentlarining lifecycle metodlari.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -890,7 +890,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Hooks",
                          description="useState va useEffect: Funksional komponentlarda davlat va lifecycle boshqaruvi.\r\nBoshqa asosiy hooks: useContext, useReducer, useMemo, useCallback.\r\nCustom hooks: Maxsus hooks yaratish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -898,7 +898,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Router",
                          description="React Router: Navigatsiya va sahifalar orasida o‘tish.\r\nDynamic routing: Dinamik marshrutlash.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -906,7 +906,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" State Management",
                          description="Context API: Kontekst orqali davlat boshqaruvi.\r\nRedux: State management uchun kutubxona.\r\nRedux Toolkit: Reduxni soddalashtirish uchun toolkit.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -914,7 +914,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Asinxron Operatsiyalar",
                          description="Fetch API: Ma'lumotlarni serverdan olish.\r\nAxios: Ma'lumotlarni olish va yuborish uchun kutubxona.\r\nReact Query: Server state boshqaruvi.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -922,7 +922,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Styling",
                          description="Fetch API: Ma'lumotlarni serverdan olish.\r\nAxios: Ma'lumotlarni olish va yuborish uchun kutubxona.\r\nReact Query: Server state boshqaruvi.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -930,7 +930,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Testing",
                          description="Jest: React ilovalarini test qilish.\r\nReact Testing Library: Komponentlarni test qilish uchun kutubxona.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==5)
                     },
@@ -950,7 +950,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Kirish va Asoslar",
                          description="Vue.js nima?: Tarixi va maqsadi.\r\nVue muhiti: Vue CLI bilan boshlash.\r\nVue komponentlari: Yagona fayl komponentlari (Single File Components).",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson2.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -958,7 +958,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Vue Syntax va Template'lar\r\n",
                          description="Templates: HTML bilan ishlash.\r\nDirektivlar: v-bind, v-model, v-if, v-for, va boshqalar.\r\nEventlar: v-on bilan hodisalarni boshqarish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson3.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -966,7 +966,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Komponentlar",
                          description="Komponentlar yaratish: Yagona fayl komponentlari.\r\nProps va State: Komponentlar o‘rtasida ma'lumot uzatish.\r\nEmit va Custom Events: Maxsus hodisalarni uzatish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson4.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -974,7 +974,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Reaktivlik",
                          description="Reaktiv ma'lumotlar: Vue reaktivlik tizimi.\r\nComputed properties: Hisoblangan xususiyatlar.\r\nWatchers: Kuzatuvchilar bilan ma'lumotlar o‘zgarishini kuzatish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson5.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -982,7 +982,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Router",
                          description="Vue Router: Navigatsiya va sahifalar orasida o‘tish.\r\nDynamic routing: Dinamik marshrutlash.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson6.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -990,7 +990,7 @@ namespace Udemy.Api.AllData
                     {
                          name="State Management",
                          description="Vuex: Vue ilovalari uchun davlat boshqaruvi.\r\nModullar: Vuex modullari bilan ishlash.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson7.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -998,7 +998,7 @@ namespace Udemy.Api.AllData
                     {
                          name="Asinxron Operatsiyalar",
                          description="Axios: Ma'lumotlarni olish va yuborish uchun kutubxona.\r\nVue Resource: Asinxron operatsiyalarni boshqarish.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson8.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -1006,7 +1006,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Styling",
                          description="CSS-in-JS: Scoped CSS bilan stilizatsiya qilish.\r\nSass/SCSS: SASS preprocessor bilan ishlash.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson9.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -1014,7 +1014,7 @@ namespace Udemy.Api.AllData
                     {
                          name=" Testing",
                          description="Test: Vue ilovalarini test qilish.\r\nVue Test Utils: Komponentlarni test qilish uchun kutubxona.",
-                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson1.jpg",
+                         LessonPhotoPath="https://localhost:7030/images/lessons/lesson10.jpg",
                          VideoPath="https://localhost:7030/images/LessonVideoPath/lesson.mp4",
                          Courses=await db.courses.FirstOrDefaultAsync(x=>x.id==6)
                     },
@@ -1244,7 +1244,44 @@ namespace Udemy.Api.AllData
                 db.answers.AddRangeAsync(list);
                 db.SaveChangesAsync();
             }
+            if (!db.news.Any())
+            {
+                List<NewsModel> list = new List<NewsModel>()
+                {
+                    new NewsModel()
+                    {
+                        Title=".NET 9 yangiliklar va imkoniyatlari",
+                        About=".NET 9-ning asosiy yangiliklari va afzalliklarini o'z ichiga olgan maqola keltirilgan:\r\n\r\n---\r\n\r\n### .NET 9: Yangi Talqin Va Imkoniyatlar\r\n\r\nMicrosoft'ning eng so'nggi yirik dasturiy ta'minot platformasi bo'lgan .NET 9 chiqdi va dasturchilar uchun ko'plab yangi imkoniyatlar va yaxshilanishlarni taqdim etmoqda. Quyida .NET 9-ning asosiy yangiliklari va uning dasturchilarga nimalar olib kelishi haqida batafsil ma'lumotlar keltirilgan.\r\n\r\n#### Ishlash Samarasini Oshirish\r\n\r\n.NET 9 ish faoliyatini sezilarli darajada yaxshilash uchun bir qator optimallashtirishlarni o'z ichiga oladi:\r\n- **Just-In-Time (JIT) kompilyatsiyasi** yaxshilandi, bu esa kodning tezroq bajarilishini ta'minlaydi.\r\n- **Garbage collection** va xotira boshqaruvi optimallashtirildi, bu esa xotira ishlatilishini kamaytiradi va dasturiy ta'minotning ishlash tezligini oshiradi.\r\n- **Yuqori tezlikda ishga tushirish** va kechikishlarni kamaytirish bilan dasturlar tezroq yuklanadi va ishga tushadi.\r\n\r\n#### Yangi Til Imkoniyatlari\r\n\r\n.NET 9 yangi til imkoniyatlari va yaxshilanishlarni o'z ichiga oladi:\r\n- **C# 12** qo'llab-quvvatlanadi, bu yangi til konstruktsiyalari va funksiyalarini o'z ichiga oladi.\r\n- **F# 8** yangilanishlari bilan yuqori samaradorlik va yangi funksional dasturlash imkoniyatlari taqdim etiladi.\r\n- **Visual Basic** uchun konservativ o'zgarishlar bilan yaxshilanishlar qo'shildi.\r\n\r\n#### Kross-platform Dasturlash\r\n\r\n.NET 9 kross-platform imkoniyatlariga katta e'tibor qaratmoqda, bu esa dasturchilarga Windows, Linux va macOS operatsion tizimlarida ishlaydigan dasturlar yaratishga imkon beradi:\r\n- **ARM64 va Apple Silicon (M1/M2)** arxitekturalari uchun yaxshilangan qo'llab-quvvatlash.\r\n- **Bitta ramka** ostida ishlash, .NET Core, .NET Framework va Xamarin ni birlashtirish davom ettirilmoqda.\r\n\r\n#### Blazor Yaxshilanishlari\r\n\r\nBlazor-ning yangi versiyalari quyidagi yaxshilanishlarni taqdim etadi:\r\n- **Blazor WebAssembly** ishlashini yaxshilash.\r\n- Yangi Blazor komponentlari va yaxshiroq vosita qo'llab-quvvatlash.\r\n- **Blazor Hybrid** dasturlari uchun yaxshilangan qo'llab-quvvatlash.\r\n\r\n#### Bulut-Tabiiy Va Kontenerizatsiya\r\n\r\n.NET 9 bulutli dasturlar va konteyner texnologiyalari bilan yanada yaxshiroq integratsiya qiladi:\r\n- Kubernetes va boshqa konteyner orkestratsiya platformalari bilan yaxshilangan integratsiya.\r\n- Mikroxizmatlar va bulutli dasturlar yaratish uchun yaxshilangan qo'llab-quvvatlash.\r\n- Bulutli dasturlar uchun yaxshilangan diagnostika va monitoring vositalari.\r\n\r\n#### Xavfsizlik\r\n\r\nXavfsizlik .NET 9-ning asosiy yo'nalishlaridan biridir:\r\n- Zamonaviy xavfsizlik standartlariga muvofiq yaxshilangan xavfsizlik funksiyalari.\r\n- Xavfsiz kod yozish amaliyotlarini va avtomatlashtirilgan zaifliklarni skanerlashni qo'llab-quvvatlash.\r\n\r\n#### Asboblar Va IDE Qo'llab-quvvatlashi\r\n\r\n.NET 9 yangilangan va yaxshilangan asboblar va IDE qo'llab-quvvatlashi bilan birga keladi:\r\n- Yangilangan Visual Studio yangi funksiyalar va .NET 9 qo'llab-quvvatlashi bilan.\r\n- Visual Studio Code va JetBrains Rider kabi boshqa IDElarda yaxshilangan qo'llab-quvvatlash.\r\n- Yaxshilangan nosozliklarni tuzatish va profiling vositalari.\r\n\r\n#### Kutubxonalar Va APIlar\r\n\r\n.NET 9 yangi kutubxonalar va APIlar bilan dasturchilarning unumdorligini oshirish uchun qo'shimcha imkoniyatlar taqdim etadi:\r\n- Zamonaviy ilovalar uchun yangi kutubxonalar.\r\n- Oddiy vazifalarni soddalashtirish va ishlab chiquvchilarning mahsuldorligini oshirish uchun kengaytirilgan APIlar.\r\n\r\n#### Orqaga Moslik\r\n\r\n.NET 9 oldingi versiyalar bilan orqaga moslikni ta'minlashga harakat qiladi, bu esa mavjud ilovalarni yangilash jarayonini osonlashtiradi.\r\n\r\n.NET 9 o'zidan oldingi versiyalarning mustahkam va ko'p tomonlama asosiga asoslangan holda, keng ko'lamli ilovalarni ishlab chiqish uchun kuchli muhit yaratishda davom etmoqda. Bu yangi platforma dasturchilarga ilg'or funksiyalar va yaxshilanishlar orqali yanada keng imkoniyatlar ochib beradi.\r\n\r\n---",
+                        popularTopic=await db.popularTopics.FirstOrDefaultAsync(x=>x.Id==1),
+                        NewsPhotoPath="https://localhost:7030/images/news/news.jpg"
+                    },
+                    new NewsModel()
+                    {
+                        Title="Dasturchilar uchun foydali top 10 ta sayt va ularning imkoniyatlari",
+                        About="Dasturchilar uchun foydali bo'lgan eng yaxshi veb-saytlar va ularning imkoniyatlari haqida qisqacha ma'lumot keltirilgan:\r\n\r\n### 1. [Stack Overflow](https://stackoverflow.com)\r\n- **Imkoniyatlari**: Dasturchilar uchun savol-javob platformasi bo'lib, turli dasturlash tillari va texnologiyalarga oid savollarga javob topish mumkin.\r\n- **Foydasi**: Tez-tez duch keladigan muammolarni hal qilish va tajribali dasturchilardan maslahat olish uchun juda foydali.\r\n\r\n### 2. [GitHub](https://github.com)\r\n- **Imkoniyatlari**: Kodlar uchun versiya nazorati va hamkorlik platformasi. Loyihalarni boshqarish, saqlash va kodlarni baham ko'rish imkonini beradi.\r\n- **Foydasi**: Ochiq manba loyihalarida ishtirok etish, o'zingizning loyihalaringizni saqlash va boshqalar bilan hamkorlik qilish uchun muhim vosita.\r\n\r\n### 3. [Reddit (r/programming)](https://www.reddit.com/r/programming/)\r\n- **Imkoniyatlari**: Dasturlashga oid yangiliklar, maqolalar va muhokamalar.\r\n- **Foydasi**: Eng so'nggi yangiliklar va texnologik yangiliklar haqida bilib olish, hamda tajribali dasturchilar bilan muloqot qilish.\r\n\r\n### 4. [MDN Web Docs](https://developer.mozilla.org)\r\n- **Imkoniyatlari**: Veb dasturlashga oid hujjatlar va qo'llanmalar. HTML, CSS, JavaScript va boshqa veb texnologiyalari haqida batafsil ma'lumotlar.\r\n- **Foydasi**: Veb dasturchilar uchun asosiy manba bo'lib, keng qamrovli ma'lumotlarni taqdim etadi.\r\n\r\n### 5. [HackerRank](https://www.hackerrank.com)\r\n- **Imkoniyatlari**: Kod yozish va algoritmik muammolarni hal qilish uchun mashqlar.\r\n- **Foydasi**: Kod yozish ko'nikmalarini oshirish va texnik intervyular uchun tayyorgarlik ko'rish.\r\n\r\n### 6. [LeetCode](https://leetcode.com)\r\n- **Imkoniyatlari**: Kod muammolarini hal qilish va texnik intervyular uchun tayyorlanish platformasi.\r\n- **Foydasi**: Algoritmlar va ma'lumotlar tuzilmalari bo'yicha ko'nikmalarni oshirish uchun keng qamrovli muammolar bazasi.\r\n\r\n### 7. [Coursera](https://www.coursera.org)\r\n- **Imkoniyatlari**: Turli mavzularda, shu jumladan dasturlash va kompyuter fanlari bo'yicha onlayn kurslar.\r\n- **Foydasi**: Dunyoning eng yaxshi universitetlari va kompaniyalaridan sifatli ta'lim olish imkoniyati.\r\n\r\n### 8. [edX](https://www.edx.org)\r\n- **Imkoniyatlari**: Onlayn kurslar va dasturlar, shu jumladan kompyuter fanlari va dasturlash bo'yicha kurslar.\r\n- **Foydasi**: Dunyodagi yetakchi universitetlar va muassasalar tomonidan taqdim etilgan kurslar orqali bilim olish.\r\n\r\n### 9. [FreeCodeCamp](https://www.freecodecamp.org)\r\n- **Imkoniyatlari**: Keng qamrovli va bepul dasturlash kurslari. \r\n- **Foydasi**: Boshlang'ich darajadan tortib ilg'or darajagacha bo'lgan dasturlash bilimlarini oshirish uchun ajoyib manba.\r\n\r\n### 10. [CodePen](https://codepen.io)\r\n- **Imkoniyatlari**: Veb rivojlantirish uchun onlayn kod muharriri va hamjamiyat.\r\n- **Foydasi**: Veb loyihalarni sinab ko'rish, o'rganish va boshqalar bilan o'z kodlaringizni baham ko'rish.\r\n\r\nBu saytlar dasturchilar uchun juda ko'p foydali manbalar va imkoniyatlar taqdim etadi. Ular orqali siz o'z bilim va ko'nikmalaringizni oshirishingiz, muammolarni hal qilishingiz va texnologik yangiliklardan xabardor bo'lib turishingiz mumkin.",
+                        popularTopic=await db.popularTopics.FirstOrDefaultAsync(x=>x.Id==1),
+                        NewsPhotoPath="https://localhost:7030/images/news/news1.jpg"
+                    },
+                    new NewsModel()
+                    {
+                        Title="JavaScript imkoniyatlari va tarixi",
+                        About="JavaScript dasturlash tilining tarixi va imkoniyatlari juda boy va murakkab. Bu til dastlab faqat oddiy vazifalarni bajarish uchun mo'ljallangan bo'lsa-da, hozirgi kunda u veb rivojlantirishning ajralmas qismiga aylangan. Quyida JavaScript'ning tarixi va uning imkoniyatlari haqida batafsil ma'lumot keltirilgan:\r\n\r\n### JavaScript Tarixi\r\n\r\n#### 1995: JavaScript'ning Yaratilishi\r\n- **Yaratilish**: JavaScript dastlab Netscape Communications korporatsiyasida Brendan Eich tomonidan yaratildi va dastlab \"Mocha\" deb nomlangan.\r\n- **Nomi**: Bir necha nom o'zgartirishlaridan so'ng, til \"JavaScript\" deb nomlandi, bu esa o'sha paytdagi mashhur Java dasturlash tiliga bog'liq bo'lib tuyuldi.\r\n- **Maqsadi**: JavaScript dastlab veb-sahifalarda oddiy o'zaro ta'sirlarni ta'minlash uchun mo'ljallangan edi.\r\n\r\n#### 1996: ECMA Standartlari\r\n- **Standartlashuv**: 1996-yilda Netscape JavaScript'ni ECMA International'ga topshirdi, natijada ECMA-262 standarti paydo bo'ldi, bu standart tilning rasmiy nomi \"ECMAScript\" deb ataladi.\r\n\r\n#### 1997-1999: ES1, ES2 va ES3\r\n- **Birlik**: ECMAScript 1 (ES1) 1997-yilda chiqarildi.\r\n- **Yangi versiyalar**: ES2 (1998) va ES3 (1999) tilda yangi imkoniyatlar qo'shdi va mavjud funksiyalarni yaxshiladi.\r\n\r\n#### 2005: AJAX\r\n- **AJAX**: Asynchronous JavaScript and XML (AJAX) texnologiyasi joriy qilindi, bu veb-sahifalarning server bilan asinxron muloqot qilishiga imkon berdi va foydalanuvchi tajribasini sezilarli darajada yaxshiladi.\r\n\r\n#### 2009: ES5\r\n- **Yangi imkoniyatlar**: ECMAScript 5 (ES5) ko'plab yangi imkoniyatlar qo'shdi, jumladan, strict mode, JSON, Object.yechirib kirish, va Array metodlari.\r\n\r\n#### 2015: ES6 / ECMAScript 2015\r\n- **Katta yangilanish**: ECMAScript 6 (ES6) yoki ECMAScript 2015 JavaScript tilida eng katta yangilanishlardan biri bo'lib, yangi sinf tuzilmalari, arrow funksiyalar, let va const o'zgaruvchilari, promises, va modullar kabi ko'plab yangi imkoniyatlar qo'shildi.\r\n\r\n#### 2016-hozirgi kunga qadar: Yillik yangilanishlar\r\n- **Davom etayotgan rivojlanish**: ECMAScript 2016 (ES7), ECMAScript 2017 (ES8) va undan keyingi versiyalar yillik yangilanishlar orqali tilda yangi imkoniyatlar va yaxshilanishlarni taqdim etib kelmoqda.\r\n- **Yangi imkoniyatlar**: Async/await, generator funksiyalar, String va Array metodlari kabi imkoniyatlar qo'shildi.\r\n\r\n### JavaScript Imkoniyatlari\r\n\r\nJavaScript tilining hozirgi imkoniyatlari juda keng va quyidagi asosiy yo'nalishlarda qo'llaniladi:\r\n\r\n#### 1. Veb-Rivojlantirish\r\n- **Front-End**: JavaScript veb-sahifalarga dinamiklik qo'shish uchun ishlatiladi. HTML va CSS bilan birgalikda, u foydalanuvchi interfeyslarini yaratishning asosiy qismiga aylangan.\r\n- **Back-End**: Node.js orqali server tomonda ishlash imkonini beradi, bu esa JavaScript'ni to'liq stack rivojlantirish tiliga aylantiradi.\r\n\r\n#### 2. Mobil Ilovalar\r\n- **React Native** va **Ionic** kabi platformalar orqali JavaScript yordamida mobil ilovalar yaratish mumkin.\r\n\r\n#### 3. Veb Ilovalar\r\n- **Electron** yordamida JavaScript yordamida kross-platforma ish stoli ilovalari yaratish mumkin.\r\n\r\n#### 4. O'yin Rivojlantirish\r\n- **Phaser** va **Three.js** kabi kutubxonalar yordamida brauzer o'yinlari yaratish uchun JavaScript ishlatiladi.\r\n\r\n#### 5. Ma'lumotlar Bilan Ishlash\r\n- JavaScript asinxron operatsiyalarni qo'llab-quvvatlaydi, bu esa ma'lumotlarni olish va qayta ishlash uchun qulaydir.\r\n\r\n#### 6. Reaktiv Dasturlash\r\n- **React** va **Vue.js** kabi reaktiv kutubxonalar yordamida foydalanuvchi interfeyslarini yaratish uchun ishlatiladi.\r\n\r\nJavaScript dasturlash tilining imkoniyatlari va tarixi uni veb-rivojlantirishning ajralmas qismiga aylantiradi. Har yili yangi versiyalar va imkoniyatlar qo'shilishi bilan til yanada kuchliroq va ko'p tomonlama bo'lib bormoqda.",
+                        popularTopic=await db.popularTopics.FirstOrDefaultAsync(x=>x.Id==1),
+                        NewsPhotoPath="https://localhost:7030/images/news/news2.jpg"
+                    },
+                    new NewsModel()
+                    {
+                        Title="Angular tarixi va imkoniyatlari",
+                        About="### Angular Tarixi\r\n\r\n#### 1. AngularJS (Angular 1)\r\n- **Yaratilishi**: AngularJS dastlab 2009-yilda Misko Hevery va Adam Abrons tomonidan yaratildi. Google tomonidan ishlab chiqilgan bo'lib, u birinchi navbatda bir sahifalik veb-ilovalarni (SPA) yaratish uchun mo'ljallangan edi.\r\n- **Asosiy Konseptsiyalar**: AngularJS MVC (Model-View-Controller) arxitekturasiga asoslangan bo'lib, ikki tomonlama ma'lumotlar bog'lanishi (two-way data binding) va deklarativ dasturlashga katta e'tibor qaratdi.\r\n\r\n#### 2. Angular (Angular 2+)\r\n- **Rebrending va Yangi Versiya**: 2016-yilda Google Angular 2-ni chiqardi, bu AngularJS'dan tubdan farq qiladigan yangi va qayta yozilgan ramka edi. Shu vaqtdan boshlab, Angular (versiya 2 va undan keyingi versiyalar) AngularJS'dan farqlanadi va an'anaviy Angular deb ataladi.\r\n- **Asosiy Yaxshilanishlar**:\r\n  - **Komponentlar Arxitekturasi**: Angular 2 komponentga asoslangan arxitekturani qo'llab-quvvatlaydi, bu esa modullar va qayta foydalanish imkoniyatlarini oshiradi.\r\n  - **TypeScript**: Angular 2 va undan keyingi versiyalar TypeScript yordamida yozilgan, bu statik tahlil va kuchli tip tizimini ta'minlaydi.\r\n  - **O'rnatilgan Asinxron Ko'mak**: RxJS kutubxonasi yordamida reaktiv dasturlashni qo'llab-quvvatlaydi.\r\n\r\n#### 3. Angular 4, 5, 6 va Hozirgi Versiyalar\r\n- **Yillik Yangi Versiyalar**: Angular komandasi yillik yangilanishlarni joriy qildi. Har bir yangi versiya oldingi versiyalarni yaxshilab, yangi funksiyalar va optimallashtirishlarni qo'shadi.\r\n- **Angular CLI**: Angular dasturlarini yaratish, ishlab chiqish va boshqarish uchun kuchli buyruq qatori interfeysi (CLI) taqdim etildi.\r\n- **Ivy Renderer**: Angular 9-dan boshlab, yangi Ivy renderer joriy etildi, bu esa dasturning yuklanish vaqtini qisqartiradi va ishlash samaradorligini oshiradi.\r\n\r\n### Angular Imkoniyatlari\r\n\r\n#### 1. Komponentga Asoslangan Arxitektura\r\n- **Modullik**: Angular komponentlar va modullarga asoslangan bo'lib, bu kodni qayta ishlatishni osonlashtiradi va dasturni modullar shaklida tashkil qilish imkonini beradi.\r\n\r\n#### 2. TypeScript\r\n- **Statik Tahlil**: TypeScript yordamida yozilganligi sababli, Angular dasturchilarga kodni yozish va tahlil qilishda ko'maklashadi, bu esa kamroq xatoliklar va yanada ishonchli kod yozishga yordam beradi.\r\n\r\n#### 3. Ikki Tomonlama Ma'lumotlar Bog'lanishi\r\n- **Soddalashtirilgan Interfeyslar**: Model va view o'rtasida avtomatik sinxronlashni ta'minlaydi, bu esa foydalanuvchi interfeyslarini yaratishni soddalashtiradi.\r\n\r\n#### 4. Dependency Injection (DI)\r\n- **Modullik Va Qayta Ishlatish**: DI yordamida Angular komponentlar, xizmatlar va boshqa obyektlar o'rtasidagi bog'liqlikni boshqaradi va ularni osongina o'zgartirish va qayta ishlatish imkonini beradi.\r\n\r\n#### 5. RxJS Va Reaktiv Dasturlash\r\n- **Asinxron Ko'mak**: RxJS kutubxonasi yordamida reaktiv dasturlashni qo'llab-quvvatlaydi, bu esa asinxron operatsiyalarni boshqarishni osonlashtiradi.\r\n\r\n#### 6. Angular CLI\r\n- **Standartlashgan Loyihalar**: Angular CLI yordamida yangi loyihalarni yaratish, kodni yig'ish va ishlab chiqish jarayonlarini boshqarish osonlashadi. Bu dasturchilarga standartlashgan va toza kod bazalarini yaratishga yordam beradi.\r\n\r\n#### 7. Router\r\n- **SPA Yaratish**: Angular routeri yordamida bir sahifalik ilovalar yaratish va ularni boshqarish osonlashadi, bu esa foydalanuvchi tajribasini yaxshilaydi.\r\n\r\n#### 8. Formalar Va Validatsiya\r\n- **Interaktiv Formalar**: Angular'da reaktiv va shablon asosidagi formalarning kuchli qo'llab-quvvatlovi mavjud bo'lib, murakkab formalarga ishlov berishni va ularni validatsiya qilishni osonlashtiradi.\r\n\r\n#### 9. Performance Optimizations\r\n- **Yuklanish Vaqtlarini Qisqartirish**: Ivy renderer va boshqa optimallashtirishlar yordamida Angular ilovalari tezroq yuklanadi va samarali ishlaydi.\r\n\r\n### Xulosa\r\n\r\nAngular o'zining kuchli komponentga asoslangan arxitekturasi, TypeScript bilan integratsiyasi va keng qamrovli funksiyalari bilan veb-ilovalar yaratishda juda samarali va qulay vosita hisoblanadi. U dasturchilarga katta va murakkab ilovalarni tuzishda yordam berish uchun mo'ljallangan va yildan-yilga yaxshilanib, yangi imkoniyatlar qo'shilib bormoqda.",
+                        popularTopic=await db.popularTopics.FirstOrDefaultAsync(x=>x.Id==1),
+                       NewsPhotoPath="https://localhost:7030/images/news/news3.jpg"
+                    },
 
+                };
+
+                await db.news.AddRangeAsync(list);
+                await db.SaveChangesAsync();
+            }
         }
     }
 }
