@@ -17,5 +17,6 @@ namespace Udemy.Domain.MODELS
         public string FirstName { get; set; }
         public string LastName { get; set; }
        public string Role {  get; set; }
+        public virtual List<CourseModel> Courses { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Udemy.Infastucture.Persistants;
@@ -11,9 +12,11 @@ using Udemy.Infastucture.Persistants;
 namespace Udemy.Infastucture.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240528163609_jggfdjy")]
+    partial class jggfdjy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,21 +27,6 @@ namespace Udemy.Infastucture.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("CourseModelUserModel", b =>
-                {
-                    b.Property<int>("Coursesid")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("usersId")
-                        .HasColumnType("text");
-
-                    b.HasKey("Coursesid", "usersId");
-
-                    b.HasIndex("usersId");
-
-                    b.ToTable("CourseModelUserModel");
-                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -427,6 +415,9 @@ namespace Udemy.Infastucture.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("text");
 
+                    b.Property<int?>("CourseModelid")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)");
@@ -481,6 +472,8 @@ namespace Udemy.Infastucture.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CourseModelid");
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -489,21 +482,6 @@ namespace Udemy.Infastucture.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("CourseModelUserModel", b =>
-                {
-                    b.HasOne("Udemy.Domain.MODELS.CourseModel", null)
-                        .WithMany()
-                        .HasForeignKey("Coursesid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Udemy.Domain.MODELS.UserModel", null)
-                        .WithMany()
-                        .HasForeignKey("usersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -631,6 +609,13 @@ namespace Udemy.Infastucture.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Udemy.Domain.MODELS.UserModel", b =>
+                {
+                    b.HasOne("Udemy.Domain.MODELS.CourseModel", null)
+                        .WithMany("users")
+                        .HasForeignKey("CourseModelid");
+                });
+
             modelBuilder.Entity("Udemy.Domain.MODELS.AutherModel", b =>
                 {
                     b.Navigation("Courses");
@@ -646,6 +631,8 @@ namespace Udemy.Infastucture.Migrations
                     b.Navigation("answers");
 
                     b.Navigation("lessons");
+
+                    b.Navigation("users");
                 });
 
             modelBuilder.Entity("Udemy.Domain.MODELS.PopularTopicModel", b =>
