@@ -31,7 +31,7 @@ namespace Udemy.Api.Controllers
             {
                 Name=topicDTO.Name,
                 Description=topicDTO.Description,
-                PopularTopicPhotoPath=filePath,
+                PopularTopicPhotoPath= $"https://localhost:7030/images/populartopics/{topicDTO.imagefile.FileName}",
                 TopicId=topicDTO.TopicId,
             };
             return await _mediator.Send(command);
@@ -47,6 +47,11 @@ namespace Udemy.Api.Controllers
         {
             return await _mediator.Send(new GetByPopularTopicNameAllCoursesCommandQuery(){PopularTopicName=name });
         }
+        [HttpGet]
+        public async Task<PopularTopicModel> GetByIdPopularTopic(int id)
+        {
+            return await _mediator.Send(new GetByIdPopularTopicCommandQuery {Id=id });
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdatePopularTopic(PopularTopicUDTO topicUDTO)
         {
@@ -58,7 +63,7 @@ namespace Udemy.Api.Controllers
             }
             UpdatePopularTopicCommand command = new UpdatePopularTopicCommand()
             {
-                PopularTopicPhotoPath = filePath,
+                PopularTopicPhotoPath = $"https://localhost:7030/images/populartopics/{topicUDTO.imagefile.FileName}",
                 TopicId=topicUDTO.TopicId,
                 Name=topicUDTO.Name,
                 Description=topicUDTO.Description,
@@ -67,9 +72,9 @@ namespace Udemy.Api.Controllers
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeletePopularTopic(DeletePopularTopicCommand command)
+        public async Task<ResponceModel> DeletePopularTopic(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeletePopularTopicCommand() { Id=id});
         }
     }
 }

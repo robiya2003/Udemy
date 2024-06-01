@@ -34,7 +34,7 @@ namespace Udemy.Api.Controllers
                 CategoryId=topicDTO.CategoryId,
                 Name=topicDTO.Name,
                 Description=topicDTO.Description,
-                TopicPhotoPath=filePath
+                TopicPhotoPath= $"https://localhost:7030/images/topics/{topicDTO.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
@@ -76,14 +76,14 @@ namespace Udemy.Api.Controllers
                 Id = topicUDTO.Id,
                 Name = topicUDTO.Name,
                 Description = topicUDTO.Description,
-                TopicPhotoPath = filePath
+                TopicPhotoPath = $"https://localhost:7030/images/topics/{topicUDTO.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteTopic(DeleteTopicCommand command)
+        public async Task<ResponceModel> DeleteTopic(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteTopicCommand() { Id=id});
         }
     }
 }

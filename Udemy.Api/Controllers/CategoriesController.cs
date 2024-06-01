@@ -83,14 +83,14 @@ namespace Udemy.Api.Controllers
                 Id = category.Id,
                 Name = category.Name,
                 Description = category.Description,
-                CategoryPhotoPath=filePath
+                CategoryPhotoPath= $"https://localhost:7030/images/categories/{category.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteCateory(DeleteCategoryCommand command)
+        public async Task<ResponceModel> DeleteCateory(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteCategoryCommand { Id=id});
         }
     }
 }

@@ -13,8 +13,8 @@ namespace Udemy.Domain.DTOS
         public int CourseId { get; set; }
         public string name { get; set; }
         public string description { get; set; }
-    
-        public string VideoPath { get; set; }
+        public IFormFile videofile { get; set; }
+
         public IFormFile imagefile { get; set; }
     }
 }

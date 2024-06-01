@@ -29,7 +29,7 @@ namespace Udemy.Api.Controllers
             }
             CreateNewsCommand command = new CreateNewsCommand()
             {
-                PhotoPath = filePath,
+                PhotoPath = $"https://localhost:7030/images/news/{news.imagefile.FileName}",
                 PopularTopicId=news.PopularTopicId,
                 Title=news.Title,
                 About=news.About,
@@ -46,6 +46,11 @@ namespace Udemy.Api.Controllers
         {
             return await _mediator.Send(new GetByNameNewsCommandQuery() { Id=id} );
         }
+        [HttpGet]
+        public async Task<NewsModel> GetByIdNews(int id)
+        {
+            return await _mediator.Send(new GetByIdNewsCommandQuery() { Id=id});
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdateNews(NewsUDTO news)
         {
@@ -61,15 +66,15 @@ namespace Udemy.Api.Controllers
                 About = news.About,
                 Title = news.Title,
                 PopularTopicId = news.PopularTopicId,
-                PhotoPath = filePath,
+                PhotoPath = $"https://localhost:7030/images/news/{news.imagefile.FileName}",
 
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteNews(DeleteNewsCommand command)
+        public async Task<ResponceModel> DeleteNews(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteNewsCommand() { Id=id});
         }
     }
 }

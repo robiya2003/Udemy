@@ -33,7 +33,7 @@ namespace Udemy.Api.Controllers
                 Gmail = auther.Gmail,
                 About = auther.About,
                 Exprince = auther.Exprince,
-                AutherPhotoPath=filePath
+                AutherPhotoPath= $"https://localhost:7030/images/authers/{auther.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
@@ -41,6 +41,11 @@ namespace Udemy.Api.Controllers
         public async Task<List<AutherModel>> GetAllAuther()
         {
             return await _mediator.Send(new GetAllAutherCommandQuery());
+        }
+        [HttpGet]
+        public async Task<AutherModel> GetByIdAuther(int id)
+        {
+            return await _mediator.Send(new GetByIdAutherCommandQuery { Id=id});
         }
         [HttpPut]
         public async Task<ResponceModel> UpdateAuther(AutherUDTO auther)
@@ -53,18 +58,19 @@ namespace Udemy.Api.Controllers
             }
             UpdateAutherCommand command = new UpdateAutherCommand()
             {
+                id=auther.Id,
                 FullName = auther.FullName,
                 Exprince = auther.Exprince,
                 About = auther.About,
                 Gmail = auther.Gmail,
-                AutherPhotoPath = filePath
+                AutherPhotoPath = $"https://localhost:7030/images/authers/{auther.imagefile.FileName}"
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteAuther(DeleteAutherCommand command)
+        public async Task<ResponceModel> DeleteAuther(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteAutherCommand() { Id=id});
         }
     }
 }

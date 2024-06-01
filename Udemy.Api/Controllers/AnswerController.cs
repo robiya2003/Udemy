@@ -27,15 +27,20 @@ namespace Udemy.Api.Controllers
         {
             return await _mediator.Send(new GetAllAnswerCommandQuery());
         }
+        [HttpGet]
+        public async Task<AnswerModel> GEtByIdAnswer(int id)
+        {
+            return await _mediator.Send(new GetByIdAnswerCommandQuery() { Id=id});
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdateAnswer(UpdateAnswerCommand command)
         {
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteAnswer(DeleteAnswerCommand command)
+        public async Task<ResponceModel> DeleteAnswer(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteAnswerCommand() { Id=id});
         }
     }
 }

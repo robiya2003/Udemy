@@ -21,19 +21,30 @@ namespace Udemy.Api.Controllers
         [HttpPost]
         public async Task<ResponceModel> CreateLesson(LessonDTO lesson)
         {
-            var fileName = Path.GetFileName(lesson.imagefile.FileName);
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images\lessons", fileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            var fileNameimage = Path.GetFileName(lesson.imagefile.FileName);
+            var filePathimage = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images\lessons", fileNameimage);
+            using (var fileStream = new FileStream(filePathimage, FileMode.Create))
             {
                 await lesson.imagefile.CopyToAsync(fileStream);
             }
+
+
+
+            var fileNamevideo = Path.GetFileName(lesson.videofile.FileName);
+            var filePathvideo = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\LessonVideoPath", fileNamevideo);
+            using (var fileStream = new FileStream(filePathvideo, FileMode.Create))
+            {
+                await lesson.videofile.CopyToAsync(fileStream);
+            }
+
+
             CreateLessonCommand command= new CreateLessonCommand()
             {
                 CourseId=lesson.CourseId,
                 name=lesson.name,
                 description=lesson.description,
-                VideoPath=lesson.VideoPath,
-                PhotoPath=filePath,
+                VideoPath=filePathimage,
+                PhotoPath=filePathvideo,
             };
             return await _mediator.Send(command);
         }
@@ -50,27 +61,36 @@ namespace Udemy.Api.Controllers
         [HttpPut]
         public async Task<ResponceModel> UpdateLesson(LessonUDTO lesson)
         {
-            var fileName = Path.GetFileName(lesson.imagefile.FileName);
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images\lessons", fileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            var fileNameimage = Path.GetFileName(lesson.imagefile.FileName);
+            var filePathimage = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images\lessons", fileNameimage);
+            using (var fileStream = new FileStream(filePathimage, FileMode.Create))
             {
                 await lesson.imagefile.CopyToAsync(fileStream);
+            }
+
+
+
+            var fileNamevideo = Path.GetFileName(lesson.videofile.FileName);
+            var filePathvideo = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\LessonVideoPath", fileNamevideo);
+            using (var fileStream = new FileStream(filePathvideo, FileMode.Create))
+            {
+                await lesson.videofile.CopyToAsync(fileStream);
             }
             UpdateLessonCommand command = new UpdateLessonCommand()
             {
                 CourseId = lesson.CourseId,
                 name = lesson.name,
                 description = lesson.description,
-                VideoPath = lesson.VideoPath,
-                PhotoPath = filePath,
+                VideoPath = filePathvideo,
+                PhotoPath = filePathimage,
                 id=lesson.id
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteLesson(DeleteLessonCommand command)
+        public async Task<ResponceModel> DeleteLesson(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteLessonCommand() { Id=id});
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Udemy.Domain.DTOS
 {
     public class AutherUDTO
     {
+        public int Id { get; set; }
         public string FullName { get; set; }
         public string Exprince { get; set; }
         public string About { get; set; }

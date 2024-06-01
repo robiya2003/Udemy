@@ -50,6 +50,11 @@ namespace Udemy.Api.Controllers
         {
             return await _mediator.Send(new GetAllCourseCommandQuery()); 
         }
+        [HttpGet]
+        public async Task<CourseModel> GetByIdCourse(int courseId)
+        {
+            return await _mediator.Send(new GetByIdCourseCommandQuery() { Id=courseId});
+        }
         [HttpPut]
         public async Task<ResponceModel> UpdateCourse(CourseUDTO model)
         {
@@ -66,14 +71,14 @@ namespace Udemy.Api.Controllers
                 name = model.name,
                 description = model.description,
                 AutherId = model.AutherId,
-                PhotoPath = filePath,
+                PhotoPath = $"https://localhost:7030/images/courses/{model.imagefile.FileName}",
             };
             return await _mediator.Send(command);
         }
         [HttpDelete]
-        public async Task<ResponceModel> DeleteCourse(DeleteCourseCommand command)
+        public async Task<ResponceModel> DeleteCourse(int id)
         {
-            return await _mediator.Send(command);
+            return await _mediator.Send(new DeleteCourseCommand() { Id=id});
         }
     }
 }

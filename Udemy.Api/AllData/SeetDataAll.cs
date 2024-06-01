@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Udemy.Domain.DTOS;
 using Udemy.Domain.MODELS;
 using Udemy.Infastucture.Persistants;
 
@@ -8,8 +10,24 @@ namespace Udemy.Api.AllData
     {
         public static async Task InitiliazeDataAsync(this IServiceProvider serviceProvider)
         {
+            var userManager = serviceProvider.GetRequiredService<UserManager<UserModel>>();
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var db = serviceProvider.GetRequiredService<AppDbContext>();
-           
+            if(!db.Users.Any()) 
+            {
+                var user1 = new UserModel()
+                {
+                    UserName = "robiya2003",
+                    Email = "robiyahakimova2003@gmail.com",
+                    FirstName = "Robiya",
+                    LastName = "Hakimova",
+                    Role = "Admin"
+                };
+                var result1 = await userManager.CreateAsync(user1, "Qwerty12!@");
+                await userManager.AddToRoleAsync(user1, "Admin");
+                
+                
+            }
             if(!db.categories.Any())
             {
                 List<CategoryModel> categories = new List<CategoryModel>()
@@ -18,79 +36,79 @@ namespace Udemy.Api.AllData
                     new CategoryModel()
                     {
                         Name="Development",
-                        Description="Description",
+                        Description="Development is defined as a process that results in growth, progress, positive change, or the addition of physical, economic, environmental, social, and demographic components to an existing system or environment. A process of transition from one qualitative state to another, more perfect one.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/development.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Business",
-                        Description="Description",
+                        Description="The term business refers to an organization or enterprising entity engaged in commercial, industrial, or professional activities. The purpose of a business is to organize some sort of economic production of goods or services.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/business.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Finance and Accounting",
-                        Description="Description",
+                        Description="Financial accounting is a specific branch of accounting involving a process of recording, summarizing, and reporting the myriad of transactions resulting from business operations over a period of time. These transactions are summarized in the preparation of financial statements—including the balance sheet, income statement, and cash flow statement—that record a company’s operating performance over a specified period.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/financeandaccounting.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="It and Software",
-                        Description="Description",
+                        Description="Even for people who have an understanding of the space, drawing a line between the two can be confusing. They’re even lumped together in common statistics. For example, according to CompTIA, there are more than 525,000 software and IT services companies in the United States alone. ",
                         CategoryPhotoPath="https://localhost:7030/images/categories/itandsoftware.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Office Productivity",
-                        Description="Description",
+                        Description="Productivity has a lot to do with the physical office, but it can be affected by management as well. Workers not only need spaces that are high performing, but they also need supportive management.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/officeproductivity.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Personal Development",
-                        Description="Description",
+                        Description="Personal development is a lifelong process. It is a way for people to assess their skills and qualities, consider their aims in life and set goals in order to realise and maximise their potential.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/personaldevelopment.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Design",
-                        Description="Description",
+                        Description="A design is the concept of or proposal for an object, process, or system. Design refers to something that is or has been intentionally created by a thinking agent, though it is sometimes used to refer to the nature of something – its design.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/design.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Marketing",
-                        Description="Description",
+                        Description="Marketing is the process of getting the public educated on and excited about an organization's products and services. A marketing team's efforts in market research and consumer trends guides the strategy behind other aspects of the business and helps companies to consistently meet the needs of consumers.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/marketing.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Lifestyle",
-                        Description="Description",
+                        Description="Lifestyle is the interests, opinions, behaviours, and behavioural orientations of an individual, group, or culture.[1][2] The term was introduced by Austrian psychologist Alfred Adler in his 1929 book, The Case of Miss R., with the meaning of \"a person's basic character as established early in childhood\".[3] The broader sense of lifestyle as a \"way or style of living\" has been documented since 1961.[3] Lifestyle is a combination of determining intangible or tangible factors. Tangible factors relate specifically to demographic variables, i.e. an individual's demographic profile, whereas intangible factors concern the psychological aspects of an individual such as personal values, preferences, and outlooks.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/lifestyle.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Photography and Video",
-                        Description="Description",
+                        Description="What Is Photography And Videography? Photographers and videographers work to capture still and moving moments respectively for a wide number of applications. Videography is used to create video content, and use audio equipment and video cameras to sound and capture moving scenes and document events.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/photographyvideo.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Health and Fitness",
-                        Description="Description",
+                        Description="Health is a state of complete physical, mental and social well-being and not merely absence of disease [1]. Fitness is an ability to execute daily functional activities with optimal performance, endurance, and strength to manage minimalist of disease, fatigue, stress and reduced sedentary behavior",
                         CategoryPhotoPath="https://localhost:7030/images/categories/fitness.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Music",
-                        Description="Description",
+                        Description="Music is an ancient art form that began during prehistoric times and carries with it a history for each human culture throughout the world. Characteristics of music include: sound, melody, harmony, rhythm or the driving beats in a measure or section of music, structure or form, texture, and expression.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/music.jpg"
                     },
                     new CategoryModel()
                     {
                         Name="Teaching and Academics",
-                        Description="Description",
+                        Description="In the last decade, several classifications of the ways in whichacademics conceptualise teaching and learning have been proposed,including our scheme (Samuelowicz and Bain 1992). This paper reassessesthe framework described in our earlier paper, evaluates the adequacy ofthe belief dimensions and categories in that framework and considerswhether there is a `transitional'' orientation to teaching and learningas argued by Kember (1997a) in his recent synthesis of the domain.",
                         CategoryPhotoPath="https://localhost:7030/images/categories/teaching.jpg"
                     }
                     #endregion
@@ -1276,7 +1294,6 @@ namespace Udemy.Api.AllData
                         popularTopic=await db.popularTopics.FirstOrDefaultAsync(x=>x.Id==1),
                        NewsPhotoPath="https://localhost:7030/images/news/news3.jpg"
                     },
-
                 };
 
                 await db.news.AddRangeAsync(list);

@@ -1,5 +1,6 @@
 using AutoService.Infrastracture;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -19,7 +20,10 @@ namespace Udemy.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.Configure<FormOptions>(options =>
+            {
+                options.MultipartBodyLengthLimit = 104857600; // Maksimal hajmni byte'larda sozlash (100 MB)
+            });
             // Add services to the containerbu
 
             builder.Services.AddApplications();
@@ -105,6 +109,7 @@ namespace Udemy.Api
                 .AddEntityFrameworkStores<IdentityDbContext>()
                 .AddApiEndpoints();
             */
+
             var app = builder.Build();
             AsyncServiceScope scope1 = app.Services.CreateAsyncScope();
             scope1.ServiceProvider.InitiliazeDataAsync();
@@ -159,6 +164,7 @@ namespace Udemy.Api
                     }
                 }
             }
+            
 
 
             app.Run();

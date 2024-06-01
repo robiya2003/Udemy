@@ -1,4 +1,5 @@
 ﻿using AutoService.Application.Abstractions;
+using AutoService.Domain.Entities.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,14 +19,10 @@ namespace Udemy.Api.Controllers
         {
             _appDbContext = appDbContext;
         }
-        [HttpGet]
-        public async Task<List<UserModel>> GetCourse(int id)
-        {
-            return _appDbContext.courses.FirstOrDefaultAsync(x=>x.id == id).Result.users;
-        }
+        
         
         [HttpPost]
-        public async Task<string> UploadFileAdmin(IFormFile ufile)
+        public async Task<ResponceModel> UploadFileAdmin(IFormFile ufile)
         {
             if (ufile != null && ufile.Length > 0)
             {
@@ -36,26 +33,17 @@ namespace Udemy.Api.Controllers
                     await ufile.CopyToAsync(fileStream);
                 }
                 Console.WriteLine(filePath);
-                return "yaratildi";
+                return new ResponceModel
+                {
+                    Message="yaratildu"
+                };
             }
-            return "yaratilmadi";
+            return new ResponceModel
+            {
+                Message = "yaratilmadi"
+            };
         }
         
-        [HttpPost]
-        public async Task<string> UploadFileUser(IFormFile ufile)
-        {
-            if (ufile != null && ufile.Length > 0)
-            {
-                var fileName = Path.GetFileName(ufile.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images", fileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await ufile.CopyToAsync(fileStream);
-                }
-                Console.WriteLine(filePath);
-                return "yaratildi";
-            }
-            return "yaratilmadi";
-        }
+        
     }
 }

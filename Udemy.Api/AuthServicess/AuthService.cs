@@ -48,7 +48,8 @@ namespace Udemy.Api.AuthServicess
                     new(JwtRegisteredClaimNames.Aud, _configuration["JWTSettings:ValidAudience"]!),
                     new(JwtRegisteredClaimNames.Iss, _configuration["JWTSettings:ValidIssuer"]!),
                     new(JwtRegisteredClaimNames.Exp, _configuration["JWTSettings:ExpireDate"]!),
-                    //new(ClaimTypes.Role, "Admin")
+                    
+                    new(ClaimTypes.Role, user.Role)
                 ];
 
             foreach (string role in roles)
